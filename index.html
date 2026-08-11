@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audiovisuelles Experiment</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            color: #eee;
+            font-family: Gill Sans, serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: normal;
+            margin: 35px;
+        }
+
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: none;
+            color: #eee;
+            border: 1px solid #eee;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #eee;
+            color: #111;
+        }
+
+        #combination {
+            margin-top: 15px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Audiovisuelles Experiment</h1>
+
+    <div id="canvas-container"></div>
+
+    <button onclick="newCombination()">
+        Neue Kombination
+    </button>
+
+    <div id="combination">
+        Noch keine Kombination ausgewählt.
+    </div>
+
+    <script src="sketch.js"></script>
+
+</body>
+</html>
